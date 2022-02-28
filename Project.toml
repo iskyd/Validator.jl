@@ -1,0 +1,4 @@
+name = "validators.jl"
+uuid = "02027c61-3ae1-4905-89a9-8d0daafb84ec"
+authors = ["Mattia Careddu <iskyd@protonmail.com>"]
+version = "0.0.1"
