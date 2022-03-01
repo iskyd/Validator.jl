@@ -1,7 +1,7 @@
 export isAscii
 
-function isAscii(str::String)::Bool
-    regex = r"^[\x00-\x7F]*$"
+isAsciiReg = r"^[\x00-\x7F]*$"
 
-    return match(regex, str) === nothing ? false : true
+function isAscii(str::String)::Bool
+    return match(isAsciiReg, str) === nothing ? false : true
 end
