@@ -1,4 +1,4 @@
-module validators
+module validator
 
 include("isEmpty.jl")
 include("isAfter.jl")

@@ -1,15 +1,15 @@
 @safetestset "isBIC" begin
-    using validators
+    using validator
 
-    @test validators.isBIC("SBICKEN1345") === true
-    @test validators.isBIC("SBICKEN1") === true
-    @test validators.isBIC("SBICKENY") === true
-    @test validators.isBIC("SBICKEN1YYP") === true
+    @test validator.isBIC("SBICKEN1345") === true
+    @test validator.isBIC("SBICKEN1") === true
+    @test validator.isBIC("SBICKENY") === true
+    @test validator.isBIC("SBICKEN1YYP") === true
 
-    @test validators.isBIC("SBIC23NXXX") === false
-    @test validators.isBIC("S23CKENXXXX") === false
-    @test validators.isBIC("SBICKENXX") === false
-    @test validators.isBIC("SBICKENXX9") === false
-    @test validators.isBIC("SBICKEN13458") === false
-    @test validators.isBIC("SBICKEN") === false
+    @test validator.isBIC("SBIC23NXXX") === false
+    @test validator.isBIC("S23CKENXXXX") === false
+    @test validator.isBIC("SBICKENXX") === false
+    @test validator.isBIC("SBICKENXX9") === false
+    @test validator.isBIC("SBICKEN13458") === false
+    @test validator.isBIC("SBICKEN") === false
 end
