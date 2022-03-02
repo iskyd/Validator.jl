@@ -19,6 +19,6 @@ validISO31661Alpha3CountriesCodes = Set([
     "VEN", "VNM", "VGB", "VIR", "WLF", "ESH", "YEM", "ZMB", "ZWE",
 ])
 
-function isISO31661Alpha3(str::String)::Bool
+function isISO31661Alpha3(str::AbstractString)::Bool
     return uppercase(str) in validISO31661Alpha3CountriesCodes
 end

@@ -28,6 +28,6 @@ validISO31661Alpha2CountriesCodes = Set([
     "ZA", "ZM", "ZW",
 ])
 
-function isISO31661Alpha2(str::String)::Bool
+function isISO31661Alpha2(str::AbstractString)::Bool
     return uppercase(str) in validISO31661Alpha2CountriesCodes
 end
