@@ -1,10 +1,10 @@
-module validator
+module Validator
 
-include("isEmpty.jl")
-include("isAfter.jl")
-include("isAscii.jl")
-include("isISO31661Alpha2.jl")
-include("isISO31661Alpha3.jl")
-include("isBIC.jl")
+include("isempty.jl")
+include("isafter.jl")
+include("isascii.jl")
+include("isiso31661alpha2.jl")
+include("isiso31661alpha3.jl")
+include("isbic.jl")
 
 end # module

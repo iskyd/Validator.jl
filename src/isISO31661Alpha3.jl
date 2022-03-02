@@ -1,4 +1,4 @@
-export isISO31661Alpha3
+export isiso31661alpha3
 
 validISO31661Alpha3CountriesCodes = Set([
     "AFG", "ALA", "ALB", "DZA", "ASM", "AND", "AGO", "AIA", "ATA", "ATG", "ARG", "ARM", "ABW", "AUS", "AUT", "AZE",
@@ -19,6 +19,6 @@ validISO31661Alpha3CountriesCodes = Set([
     "VEN", "VNM", "VGB", "VIR", "WLF", "ESH", "YEM", "ZMB", "ZWE",
 ])
 
-function isISO31661Alpha3(str::AbstractString)::Bool
+function isiso31661alpha3(str::AbstractString)::Bool
     return uppercase(str) in validISO31661Alpha3CountriesCodes
 end

@@ -1,13 +1,13 @@
-@safetestset "isEmpty" begin
-    using validator
+@safetestset "isempty" begin
+    using Validator
 
     # ignore_whitespace=false
-    @test validator.isEmpty("") === true
-    @test validator.isEmpty(" ") === false
-    @test validator.isEmpty("foo") === false
+    @test Validator.isempty("") === true
+    @test Validator.isempty(" ") === false
+    @test Validator.isempty("foo") === false
 
     # ignore_whitespace=true
-    @test validator.isEmpty("", true) === true
-    @test validator.isEmpty(" ", true) === true
-    @test validator.isEmpty("foo", true) === false
+    @test Validator.isempty("", true) === true
+    @test Validator.isempty(" ", true) === true
+    @test Validator.isempty("foo", true) === false
 end

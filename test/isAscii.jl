@@ -1,13 +1,13 @@
-@safetestset "isAScii" begin
-    using validator
+@safetestset "isascii" begin
+    using Validator
 
-    @test validator.isAscii("foobar") === true
-    @test validator.isAscii("0987654321") === true
-    @test validator.isAscii("test@example.com") === true
-    @test validator.isAscii("1234abcDEF") === true
+    @test Validator.isascii("foobar") === true
+    @test Validator.isascii("0987654321") === true
+    @test Validator.isascii("test@example.com") === true
+    @test Validator.isascii("1234abcDEF") === true
 
-    @test validator.isAscii("ｆｏｏbar") === false
-    @test validator.isAscii("ｘｙｚ０９８") === false
-    @test validator.isAscii("１２３456") === false
-    @test validator.isAscii("ｶﾀｶﾅ") === false
+    @test Validator.isascii("ｆｏｏbar") === false
+    @test Validator.isascii("ｘｙｚ０９８") === false
+    @test Validator.isascii("１２３456") === false
+    @test Validator.isascii("ｶﾀｶﾅ") === false
 end

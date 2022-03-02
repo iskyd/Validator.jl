@@ -1,4 +1,4 @@
-# validator.jl
+# Validator.jl
 
 A library of string validators and sanitizers.
 
