@@ -12,4 +12,5 @@
     @test Validator.isbic("SBICKENXX9") === false
     @test Validator.isbic("SBICKEN13458") === false
     @test Validator.isbic("SBICKEN") === false
+    @test Validator.isbic("SBI") === false
 end
