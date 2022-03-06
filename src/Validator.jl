@@ -8,5 +8,6 @@ include("isiso31661alpha3.jl")
 include("isbic.jl")
 include("isbase32.jl")
 include("isbase58.jl")
+include("isbase64.jl")
 
 end # module
