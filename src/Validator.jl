@@ -9,5 +9,6 @@ include("isbic.jl")
 include("isbase32.jl")
 include("isbase58.jl")
 include("isbase64.jl")
+include("isbefore.jl")
 
 end # module
