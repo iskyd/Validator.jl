@@ -11,5 +11,6 @@ include("isbase58.jl")
 include("isbase64.jl")
 include("isbefore.jl")
 include("isboolean.jl")
+include("isbtcaddress.jl")
 
 end # module
