@@ -12,5 +12,6 @@ include("isbase64.jl")
 include("isbefore.jl")
 include("isboolean.jl")
 include("isbtcaddress.jl")
+include("iscreditcard.jl")
 
 end # module
