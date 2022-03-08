@@ -14,5 +14,6 @@ include("isboolean.jl")
 include("isbtcaddress.jl")
 include("iscreditcard.jl")
 include("isethereumaddress.jl")
+include("isean.jl")
 
 end # module
