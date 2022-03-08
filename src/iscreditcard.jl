@@ -26,5 +26,5 @@ function iscreditcard(str::AbstractString)::Bool
         shouldDouble = !shouldDouble
     end
 
-    return !!((sum % 10) === 0 ? true : false)
+    return (sum % 10) === 0 ? true : false
 end
