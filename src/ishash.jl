@@ -1,6 +1,6 @@
 export ishash
 
-function ishash(str::AbstractString, algorithm::String)::Bool
+function ishash(str::AbstractString, algorithm::AbstractString)::Bool
     lengths = Dict([
         ("md5", 32)
         ("md4", 32)
