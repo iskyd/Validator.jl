@@ -16,5 +16,6 @@ include("iscreditcard.jl")
 include("isethereumaddress.jl")
 include("isean.jl")
 include("ishash.jl")
+include("isjwt.jl")
 
 end # module
