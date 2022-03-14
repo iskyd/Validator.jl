@@ -19,5 +19,6 @@ include("ishash.jl")
 include("isjwt.jl")
 include("ishexcolor.jl")
 include("ishexadecimal.jl")
+include("isiban.jl")
 
 end # module
