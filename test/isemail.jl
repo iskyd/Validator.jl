@@ -31,4 +31,19 @@
 
     @test Validator.isemail("foo+bar@gmail.com", false, false, ["gmail.com", "foo.bar.com"]) === false
     @test Validator.isemail("email@foo.bar.com", false, false, ["gmail.com", "foo.bar.com"]) === false
+
+
+    # Ignore max length
+    @test Validator.isemail("very-long-email-that-exceed-the-max-charactersvery-long-email-that-exceed-the-max-characters@bar.com") === false
+
+    @test Validator.isemail("very-long-email-that-exceed-the-max-charactersvery-long-email-that-exceed-the-max-characters@bar.com", true) === true
+
+
+    # Allow Ip Domain
+    @test Validator.isemail("email@[123.123.123.123]", false, true) === true
+    @test Validator.isemail("email@255.255.255.255", false, true) === true
+
+    @test Validator.isemail("email@0.0.0.256", false, true) === false
+    @test Validator.isemail("email@26.0.0.256", false, true) === false
+    @test Validator.isemail("email@[266.266.266.266]", false, true) === false
 end
