@@ -23,5 +23,8 @@ include("ishexcolor.jl")
 include("ishexadecimal.jl")
 include("isiban.jl")
 include("isip.jl")
+include("ismacaddress.jl")
+include("ismd5.jl")
+include("ismagneturi.jl")
 
 end # module
