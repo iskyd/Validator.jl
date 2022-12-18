@@ -30,5 +30,6 @@ include("ismimetype.jl")
 include("ismongoid.jl")
 include("ispassportnumber.jl")
 include("isrgbcolor.jl")
+include("isuuid.jl")
 
 end # module
