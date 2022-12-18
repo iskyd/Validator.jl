@@ -26,5 +26,10 @@ include("isip.jl")
 include("ismacaddress.jl")
 include("ismd5.jl")
 include("ismagneturi.jl")
+include("ismimetype.jl")
+include("ismongoid.jl")
+include("ispassportnumber.jl")
+include("isrgbcolor.jl")
+include("isuuid.jl")
 
 end # module
