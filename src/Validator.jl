@@ -29,5 +29,6 @@ include("ismagneturi.jl")
 include("ismimetype.jl")
 include("ismongoid.jl")
 include("ispassportnumber.jl")
+include("isrgbcolor.jl")
 
 end # module
