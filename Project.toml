@@ -1,7 +1,7 @@
 name = "Validator"
 uuid = "02027c61-3ae1-4905-89a9-8d0daafb84ec"
 authors = ["Mattia Careddu <iskyd@protonmail.com>"]
-version = "0.2.0"
+version = "0.2.1"
 
 [deps]
 Dates = "ade2ca70-3891-5945-98fb-dc099432e06a"
